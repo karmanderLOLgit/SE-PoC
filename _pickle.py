@@ -1,5 +1,7 @@
 ```
-#The code provided is vulnerable to a deserialization attack. The `Skid` class implements the `__reduce__()` method, which allows an attacker to execute arbitrary code #during deserialization. In this case, the code opens a file and writes to it, which can be abused to perform unintended actions or execute malicious commands on the #system. It is important to validate and sanitize input when deserializing untrusted data to prevent such vulnerabilities.
+#The code provided is vulnerable to a deserialization attack. The `Skid` class implements the `__reduce__()` method, which allows an attacker to execute arbitrary code  
+#during deserialization. In this case, the code opens a file and writes to it, which can be abused to perform unintended actions or execute malicious commands on the #system. 
+#It is important to validate and sanitize input when deserializing untrusted data to prevent such vulnerabilities.
 
 import _pickle as skid
 import os 
